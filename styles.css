@@ -166,40 +166,28 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Interest Link Button Style - FULL CLICKABLE AREA */
-.interest-link {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    margin: -1.5rem;
-    padding: 1.5rem;
-}
-
-.interests-list li:has(.interest-link) {
-    padding: 0;
-}
-
-.interests-list li:has(.interest-link) .interest-link:hover {
-    transform: translateX(10px);
-    background: linear-gradient(135deg, #667eea25 0%, #764ba225 100%);
-    border-left-color: #764ba2;
-}
-
-.interest-link i {
+.interests-list i {
     color: #667eea;
     margin-right: 1rem;
     font-size: 1.3rem;
-    transition: color 0.3s ease;
 }
 
-.interest-link:hover i {
+/* Chess Link - Only text clickable */
+.chess-link {
+    text-decoration: none;
+    color: #667eea;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+.chess-link:hover {
     color: #764ba2;
-}
-
-.interest-link strong {
-    color: #333;
+    background: linear-gradient(135deg, #667eea25 0%, #764ba225 100%);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
 }
 
 /* Skills Section */
