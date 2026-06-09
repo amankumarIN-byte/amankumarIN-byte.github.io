@@ -154,25 +154,35 @@ body {
 }
 
 .interests-list li {
-    padding: 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.interests-list li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Interest Link Button Style - FULL CLICKABLE AREA */
 .interest-link {
     display: block;
-    padding: 1.5rem;
-    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-    border-left: 4px solid #667eea;
-    border-radius: 5px;
     text-decoration: none;
     color: #333;
     transition: all 0.3s ease;
     cursor: pointer;
+    margin: -1.5rem;
+    padding: 1.5rem;
 }
 
-.interest-link:hover {
+.interests-list li:has(.interest-link) {
+    padding: 0;
+}
+
+.interests-list li:has(.interest-link) .interest-link:hover {
     transform: translateX(10px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     background: linear-gradient(135deg, #667eea25 0%, #764ba225 100%);
     border-left-color: #764ba2;
 }
